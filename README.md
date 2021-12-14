@@ -7,7 +7,6 @@
 - 👨‍💻 I work as a fullstack web developer
 - 📚 I'm currently improving on C#
 
-### Knowledge ⤵
 <div style="display: inline_block"><br>
   <img align="center" alt="Gui-Js" height="50" width="60" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
   <img align="center" alt="Gui-Ts" height="50" width="60" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-plain.svg">
@@ -22,8 +21,7 @@
 </div>
  
  </br>
- 
- ### Contacts 📩
+
 <div> 
   <a href="https://instagram.com/guuifre" target="_blank"><img src="https://img.shields.io/badge/-Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white" target="_blank"></a>
   <a href = "mailto:guiaafre@gmail.com"><img src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a>
