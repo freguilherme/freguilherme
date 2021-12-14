@@ -7,7 +7,7 @@
 - 👨‍💻 I work as a fullstack web developer
 - 📚 I'm currently improving on C#
 
-### Knowledge:
+### Knowledge ⤵
 <div style="display: inline_block"><br>
   <img align="center" alt="Gui-Js" height="50" width="60" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
   <img align="center" alt="Gui-Ts" height="50" width="60" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-plain.svg">
