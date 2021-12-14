@@ -4,8 +4,8 @@
 <a target="_blank" rel="noopener noreferrer" href="https://raw.githubusercontent.com/vcctm/vcctm/main/x-teambg.gif"><img align="center" src="https://raw.githubusercontent.com/vcctm/vcctm/main/x-teambg.gif" height="300px" style="max-width: 100%;"></a>
 </p>
 
-- 🔭 I work as a fullstack web developer
-- 🌱 I'm currently improving on C#
+- 👨‍💻 I work as a fullstack web developer
+- 📚 I'm currently improving on C#
 
 <div style="display: inline_block"><br>
   <img align="center" alt="Gui-Js" height="50" width="60" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
