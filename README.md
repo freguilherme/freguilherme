@@ -1,6 +1,4 @@
-##<p align="center">
- Hello, my name is Guilherme, <a target="_blank" rel="noopener noreferrer" href="https://raw.githubusercontent.com/alexnaiman/alexnaiman/master/resources/welcomeglitch.gif"><img src="https://raw.githubusercontent.com/alexnaiman/alexnaiman/master/resources/welcomeglitch.gif" width="50px" style="max-width: 100%;"></a> to my GitHub repository <img align="center" alt="Gui-Apache" height="50" width="60" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg">
-</p>
+## Hello, my name is Guilherme, <a target="_blank" rel="noopener noreferrer" href="https://raw.githubusercontent.com/alexnaiman/alexnaiman/master/resources/welcomeglitch.gif"><img src="https://raw.githubusercontent.com/alexnaiman/alexnaiman/master/resources/welcomeglitch.gif" width="50px" style="max-width: 100%;"></a> to my GitHub repository <img align="center" alt="Gui-Apache" height="50" width="60" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg">
 
 <p align="center">
 <a target="_blank" rel="noopener noreferrer" href="https://raw.githubusercontent.com/vcctm/vcctm/main/x-teambg.gif"><img align="center" src="https://raw.githubusercontent.com/vcctm/vcctm/main/x-teambg.gif" height="300px" style="max-width: 100%;"></a>
@@ -21,8 +19,6 @@
   <img align="center" alt="Gui-Oracle" height="50" width="60" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/oracle/oracle-original.svg">
   <img align="center" alt="Gui-Mysql" height="50" width="60" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg"> 
 </div>
- 
- ###
  
 <div> 
   <a href="https://instagram.com/guuifre" target="_blank"><img src="https://img.shields.io/badge/-Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white" target="_blank"></a>
