@@ -1,5 +1,5 @@
-<p align="center">
-## Hello, my name is Guilherme, <a target="_blank" rel="noopener noreferrer" href="https://raw.githubusercontent.com/alexnaiman/alexnaiman/master/resources/welcomeglitch.gif"><img src="https://raw.githubusercontent.com/alexnaiman/alexnaiman/master/resources/welcomeglitch.gif" width="50px" style="max-width: 100%;"></a> to my GitHub repository <img align="center" alt="Gui-Apache" height="50" width="60" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg">
+##<p align="center">
+ Hello, my name is Guilherme, <a target="_blank" rel="noopener noreferrer" href="https://raw.githubusercontent.com/alexnaiman/alexnaiman/master/resources/welcomeglitch.gif"><img src="https://raw.githubusercontent.com/alexnaiman/alexnaiman/master/resources/welcomeglitch.gif" width="50px" style="max-width: 100%;"></a> to my GitHub repository <img align="center" alt="Gui-Apache" height="50" width="60" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg">
 </p>
 
 <p align="center">
