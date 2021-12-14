@@ -5,7 +5,7 @@
 </p>
 
 - 👨‍💻 I work as a fullstack web developer
-- 📚 I'm currently improving on C#
+- 📚 I'm currently improving on C# with ASP.NET Core .NET 5
 
 <div style="display: inline_block"><br>
   <img align="center" alt="Gui-Js" height="50" width="60" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
