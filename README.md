@@ -4,8 +4,8 @@
 <a target="_blank" rel="noopener noreferrer" href="https://raw.githubusercontent.com/vcctm/vcctm/main/x-teambg.gif"><img align="center" src="https://raw.githubusercontent.com/vcctm/vcctm/main/x-teambg.gif" height="300px" style="max-width: 100%;"></a>
 </p>
 
-- 👨‍💻 I work as a fullstack web developer
-- 📚 I'm currently improving on C# with ASP.NET Core .NET 5
+- 👨‍💻 Fullstack web developer
+- 📚 I'm currently improving my English
 
 <div style="display: inline_block"><br>
   <img align="center" alt="Gui-Js" height="50" width="60" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
@@ -23,8 +23,6 @@
  </br>
 
 <div> 
-  <a href="https://instagram.com/guuifre" target="_blank"><img src="https://img.shields.io/badge/-Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white" target="_blank"></a>
-  <a href = "mailto:guiaafre@gmail.com"><img src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a>
   <a href="https://www.linkedin.com/in/freguilherme" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a> 
 </div>
 
