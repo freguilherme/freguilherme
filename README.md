@@ -15,7 +15,7 @@
   <img align="center" alt="Gui-Docker" height="50" width="60" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-plain-wordmark.svg">
   <img align="center" alt="Gui-Oracle" height="50" width="60" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/oracle/oracle-original.svg">
   <img align="center" alt="Gui-Mysql" height="50" width="60" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg"> 
-  <img align="center" alt="Gui-Postg" height="50" width="60" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/postgresql-original.svg"> 
+  <img align="center" alt="Gui-Postg" height="50" width="60" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original.svg"> 
 </div>
  
  </br>
