@@ -1,11 +1,16 @@
-## Hello, my name is Guilherme, <a target="_blank" rel="noopener noreferrer" href="https://raw.githubusercontent.com/alexnaiman/alexnaiman/master/resources/welcomeglitch.gif"><img src="https://raw.githubusercontent.com/alexnaiman/alexnaiman/master/resources/welcomeglitch.gif" width="50px" style="max-width: 100%;"></a> to my GitHub repository <img align="center" alt="Gui-Apache" height="50" width="60" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg">
+### Hello, welcome to my GitHub repository 👋
 
-<p align="center">
-<a target="_blank" rel="noopener noreferrer" href="https://raw.githubusercontent.com/vcctm/vcctm/main/x-teambg.gif"><img align="center" src="https://raw.githubusercontent.com/vcctm/vcctm/main/x-teambg.gif" height="300px" style="max-width: 100%;"></a>
-</p>
+###### About Guilherme
+7 years of experience in software development with Windows and Web projects
 
-- 👨‍💻 Fullstack web developer
-- 📚 English course at fluency academy
+### Details
+[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=freguilherme&show_icons=true&theme=dark)](https://github.com/anuraghazra/github-readme-stats)
+
+### Projects
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=freguilherme&repo=tiktok-clone&theme=dark)](https://github.com/anuraghazra/github-readme-stats)
+
+### Programming languages ​​used
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=freguilherme&layout=compact)](https://github.com/anuraghazra/github-readme-stats)
 
 <div style="display: inline_block"><br> 
   <img align="center" alt="Gui-HTML" height="50" width="60" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
@@ -17,12 +22,12 @@
   <img align="center" alt="Gui-Mysql" height="50" width="60" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg"> 
   <img align="center" alt="Gui-Postg" height="50" width="60" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original.svg"> 
 </div>
- 
- </br>
 
-<div> 
-  <a href="https://www.linkedin.com/in/freguilherme" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a> 
-</div>
+### Contacts
+[<img src='https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white' alt='Linkedin' height='30'>](https://www.linkedin.com/in/freguilherme/)
+
+
+
 
   
   
