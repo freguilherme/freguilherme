@@ -8,7 +8,7 @@
 
 ### Projects
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=freguilherme&repo=tiktok-clone&theme=dark)](https://github.com/anuraghazra/github-readme-stats)
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=freguilherme&repo=tiktok-clone&theme=dark)]([https://github.com/anuraghazra/github-readme-stats](https://github.com/freguilherme/tiktok-clone))
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=freguilherme&repo=tiktok-clone&theme=dark)](https://github.com/anuraghazra/github-readme-stats](https://github.com/freguilherme/tiktok-clone))
 
 ### Programming languages ​​used
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=freguilherme&layout=compact)](https://github.com/anuraghazra/github-readme-stats)
