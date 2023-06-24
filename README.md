@@ -4,14 +4,13 @@
 7 years of experience in software development with Windows and Web projects
 
 ### Details
-[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=freguilherme&show_icons=true&theme=dark)](https://github.com/anuraghazra/github-readme-stats)
+[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=freguilherme&show_icons=true&theme=dark)]()
 
 ### Projects
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=freguilherme&repo=tiktok-clone&theme=dark)](https://github.com/anuraghazra/github-readme-stats)
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=freguilherme&repo=tiktok-clone&theme=dark)](https://github.com/freguilherme/tiktok-clone)
 
 ### Programming languages ​​used
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=freguilherme&layout=compact)](https://github.com/anuraghazra/github-readme-stats)
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=freguilherme&layout=compact)]()
 
 <div style="display: inline_block"><br> 
   <img align="center" alt="HTML" height="50" width="60" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
