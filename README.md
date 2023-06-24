@@ -7,7 +7,7 @@
 [![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=freguilherme&show_icons=true&theme=dark)](https://github.com/freguilherme)
 
 ### Projects
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=freguilherme&repo=tiktok-clone&theme=dark)](https://github.com/freguilherme/tiktok-clone)
+
 
 ### Programming languages ​​used
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=freguilherme&layout=compact)](https://github.com/freguilherme)
