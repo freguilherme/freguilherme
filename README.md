@@ -25,7 +25,7 @@
 ```ts
 const guilherme = {
   role:       "Desenvolvedor Sênior @ Cyncly",
-  location:   "São Pedro, SP · Brasil 🇧🇷",
+  location:   "Cerquilho, SP · Brasil 🇧🇷",
   experience: "desde 2017 — FoxPro → GeneXus → full stack",
   mindset:    "reduzir complexidade e transformar código em soluções simples",
   focus:      ["GeneXus", "PL/SQL & SQL tuning", "integrações REST/SOAP", "SaaS full stack"],
