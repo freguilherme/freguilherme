@@ -157,6 +157,6 @@ PostgreSQL    → RLS: cada clínica só vê as próprias linhas
 
 <div align="center">
 
-`São Pedro · SP · Brasil · 2026`
+`Cerquilho · SP · Brasil · 2026`
 
 </div>
