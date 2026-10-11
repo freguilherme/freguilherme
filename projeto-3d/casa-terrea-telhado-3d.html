@@ -669,7 +669,7 @@ new ResizeObserver(resize).observe(app); resize();
 const clock = new THREE.Clock(); let first = true;
 function loop(){
   requestAnimationFrame(loop);
-  if (document.hidden) return;
+  if (document.hidden || window.__manual) return;
   const dt = clock.getDelta();
   if (!reduce){ tx.water.offset.x += dt*.02; tx.water.offset.y += dt*.013; }
   if (tween){ const k = Math.min(1, (performance.now()-tween.s)/tween.d), e = k < .5 ? 4*k*k*k : 1-Math.pow(-2*k+2,3)/2;
@@ -681,7 +681,16 @@ loop();
 
 // usado para gerar as imagens e o arquivo .glb do repositório
 window.casa3d = {
-  view: n => view(n, true), cam: (p, t) => { camera.position.set(...p); controls.target.set(...t); controls.update(); }, setHour: t => { hourEl.value = t; setHour(t); },
+  view: n => view(n, true),
+  // renderiza um quadro com câmera e estado definidos (usado para gravar o vídeo de demonstração)
+  frame: (p, t, o = {}) => {
+    if (o.hour !== undefined && o.hour !== +hourEl.value){ hourEl.value = o.hour; setHour(o.hour); }
+    if (o.roof !== undefined) roof.visible = o.roof;
+    if (o.nb !== undefined) nb.visible = o.nb;
+    if (o.time !== undefined) tx.water.offset.set(o.time*.02, o.time*.013);
+    camera.position.set(...p); camera.lookAt(...t); renderer.render(scene, camera);
+    return renderer.domElement.toDataURL('image/jpeg', .93);
+  }, cam: (p, t) => { camera.position.set(...p); controls.target.set(...t); controls.update(); }, setHour: t => { hourEl.value = t; setHour(t); },
   exportGLB: () => new Promise(res => new GLTFExporter().parse(world, r => {
     const b = new Uint8Array(r); let s = ''; for (let i = 0; i < b.length; i += 0x8000) s += String.fromCharCode(...b.subarray(i, i+0x8000)); res(btoa(s));
   }, () => res(null), {binary:true})),
