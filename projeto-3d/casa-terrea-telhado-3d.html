@@ -684,9 +684,12 @@ window.casa3d = {
   view: n => view(n, true),
   // renderiza um quadro com câmera e estado definidos (usado para gravar o vídeo de demonstração)
   frame: (p, t, o = {}) => {
-    if (o.hour !== undefined && o.hour !== +hourEl.value){ hourEl.value = o.hour; setHour(o.hour); }
-    if (o.roof !== undefined) roof.visible = o.roof;
-    if (o.nb !== undefined) nb.visible = o.nb;
+    renderer.shadowMap.autoUpdate = false; // sombras só mudam com o sol ou a visibilidade das camadas
+    let dirty = false;
+    if (o.hour !== undefined && o.hour !== +hourEl.value){ hourEl.value = o.hour; setHour(o.hour); dirty = true; }
+    if (o.roof !== undefined && roof.visible !== o.roof){ roof.visible = o.roof; dirty = true; }
+    if (o.nb !== undefined && nb.visible !== o.nb){ nb.visible = o.nb; dirty = true; }
+    if (dirty || !window.__shadowOnce){ renderer.shadowMap.needsUpdate = true; window.__shadowOnce = true; }
     if (o.time !== undefined) tx.water.offset.set(o.time*.02, o.time*.013);
     camera.position.set(...p); camera.lookAt(...t); renderer.render(scene, camera);
     return renderer.domElement.toDataURL('image/jpeg', .93);
