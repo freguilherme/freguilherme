@@ -581,7 +581,7 @@ loop();
 
 // usado para gerar as imagens e o arquivo .glb do repositório
 window.casa3d = {
-  view: n => view(n, true), setHour: t => { hourEl.value = t; setHour(t); },
+  view: n => view(n, true), cam: (p, t) => { camera.position.set(...p); controls.target.set(...t); controls.update(); }, setHour: t => { hourEl.value = t; setHour(t); },
   exportGLB: () => new Promise(res => new GLTFExporter().parse(world, r => {
     const b = new Uint8Array(r); let s = ''; for (let i = 0; i < b.length; i += 0x8000) s += String.fromCharCode(...b.subarray(i, i+0x8000)); res(btoa(s));
   }, () => res(null), {binary:true})),
