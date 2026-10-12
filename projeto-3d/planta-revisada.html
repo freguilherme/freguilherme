@@ -76,7 +76,7 @@ ol.changes b{font-weight:600}
 
 <div class="wrap">
   <header>
-    <div class="eyebrow">Revisão 2 · para aprovação · terreno 10 × 25 m</div>
+    <div class="eyebrow">Revisão 3 · para aprovação · terreno 10 × 25 m</div>
     <h1>Casa Térrea com Piscina — Planta Revisada</h1>
     <div class="meta" id="meta"></div>
   </header>
@@ -84,27 +84,28 @@ ol.changes b{font-weight:600}
   <div class="grid">
     <section class="sheet">
       <div class="planbox"><svg id="plan" role="img" aria-label="Planta baixa revisada da casa"></svg></div>
-      <div class="legend"><span><i></i> percurso social: entrada → hall → sala → jantar → cozinha → área gourmet</span><span><i class="d"></i> circulação íntima aberta</span></div>
-      <div class="sheet-foot"><span>PLANTA BAIXA · TÉRREO · REV. 2</span><span>Medidas em metros</span></div>
+      <div class="legend"><span><i></i> percurso social: entrada → hall → sala → jantar → cozinha → área gourmet</span><span><i class="d"></i> corredor íntimo com porta</span></div>
+      <div class="sheet-foot"><span>PLANTA BAIXA · TÉRREO · REV. 3</span><span>Medidas em metros</span></div>
     </section>
     <aside>
       <div>
         <h2>O que mudou</h2>
         <ol class="changes">
-          <li><b>Recuo de 1,5 m dos dois lados.</b> A casa não encosta mais em nenhum muro e tem 7 m de largura. Os quartos ganham janelas para o corredor esquerdo.</li>
-          <li><b>Lado íntimo à esquerda.</b> Escritório, suíte com banheiro, banheiro social e os quartos 2 e 3 ficam todos em fila no mesmo lado.</li>
-          <li><b>Lado social à direita, em sequência.</b> Entrada → hall com lavabo → sala → jantar → cozinha.</li>
-          <li><b>Cozinha integrada à área gourmet.</b> Uma porta de vidro de 3,2 m abre a cozinha para a varanda coberta.</li>
-          <li><b>Varanda gourmet coberta</b> com mesa grande para 10 pessoas e churrasqueira.</li>
-          <li><b>Lareira de chão</b> ao lado da piscina, com banco circular em volta.</li>
-          <li><b>Lavanderia</b> coberta no corredor direito, com porta para a cozinha. O <b>canil</b> foi para o fim do corredor esquerdo.</li>
+          <li><b>Recuos laterais de 1,5 m totalmente livres.</b> Nada construído neles, só jardim e passagem.</li>
+          <li><b>Quartos em corredor fechado.</b> Uma porta no hall dá acesso ao corredor íntimo. Banheiro social, quartos 2 e 3 abrem para ele, e a suíte fica no fim, mais reservada.</li>
+          <li><b>Suíte com closet</b> e banheiro, nos fundos do lado íntimo.</li>
+          <li><b>Escritório na frente,</b> com porta direto para o hall, para receber visitas sem passar pela área íntima.</li>
+          <li><b>Lado social em sequência:</b> entrada → hall com lavabo → sala → jantar → cozinha.</li>
+          <li><b>Lavanderia dentro da cozinha,</b> em um nicho com porta e janela para o recuo.</li>
+          <li><b>Cozinha aberta para a varanda gourmet</b> por uma porta de vidro de 2,8 m. Na varanda: mesa para 10 e churrasqueira.</li>
+          <li><b>Piscina, lareira de chão com banco em volta e canil</b> no quintal dos fundos, fora dos recuos.</li>
         </ol>
       </div>
       <div>
         <h2>Quadro de áreas</h2>
         <table id="areas"></table>
       </div>
-      <p class="note">Para caber o recuo dos dois lados, a piscina diminuiu um pouco (de 6,00 × 2,35 m para 5,60 × 2,30 m) e os quartos 2 e 3 ficaram com cerca de 8,4 m² cada. As portas dos quartos abrem para uma faixa de circulação de 0,9 m integrada à sala, sem parede. Confirme recuos, taxa de ocupação e área permeável com a prefeitura e com um arquiteto.</p>
+      <p class="note">Com os recuos livres e o corredor fechado, a largura útil ficou mais justa. A área social tem 3,05 m de largura (sala de 11,6 m², integrada ao jantar e à cozinha). Os quartos 2 e 3 têm 8,4 m², o escritório 6,6 m², e a piscina diminuiu para 4,50 × 2,30 m. Se a prefeitura permitir piscina no recuo, ela pode voltar a ter 6 m. Confirme recuos, taxa de ocupação e área permeável com a prefeitura e com um arquiteto.</p>
     </aside>
   </div>
 </div>
@@ -114,77 +115,84 @@ ol.changes b{font-weight:600}
 const HOUSE = {
   lot:{w:10,d:25},
   rooms:[
-    {id:'gar',   n:'Garagem', x:0,y:0,w:5.0,d:5.5,f:'concrete',ext:true,g:'ext',lx:2.5,ly:5.0},
-    {id:'esc',   n:'Escritório', x:1.5,y:5.5,w:3.1,d:2.3,f:'wood',g:'int',lx:3.05,ly:6.9,isNew:true},
-    {id:'suite', n:'Suíte', x:1.5,y:7.8,w:3.1,d:3.2,f:'wood',g:'int',lx:3.05,ly:9.0},
-    {id:'bsuite',n:'Banho suíte', x:1.5,y:11.0,w:3.1,d:1.7,f:'tile',g:'int',small:true,lx:3.05,ly:12.0},
-    {id:'bsoc',  n:'Banho social', x:1.5,y:12.7,w:3.1,d:1.5,f:'tile',g:'int',small:true,lx:3.05,ly:13.6},
-    {id:'q2',    n:'Quarto 2', x:1.5,y:14.2,w:3.1,d:2.7,f:'wood',g:'int',lx:3.05,ly:15.3},
-    {id:'q3',    n:'Quarto 3', x:1.5,y:16.9,w:3.1,d:2.7,f:'wood',g:'int',lx:3.05,ly:18.0},
-    {id:'hall',  n:'Hall', x:4.6,y:5.5,w:3.9,d:2.1,f:'stone',g:'soc',lx:5.6,ly:6.8,cut:{w:1.2,d:1.5},isNew:true},
-    {id:'lavabo',n:'Lavabo', x:7.3,y:5.5,w:1.2,d:1.5,f:'tile',g:'soc',small:true,lx:7.9,ly:6.1,isNew:true},
-    {id:'sala',  n:'Sala de estar', x:4.6,y:7.6,w:3.9,d:4.2,f:'stone',g:'soc',lx:6.9,ly:10.0},
-    {id:'jantar',n:'Sala de jantar', x:4.6,y:11.8,w:3.9,d:3.2,f:'stone',g:'soc',lx:7.0,ly:13.8},
-    {id:'coz',   n:'Cozinha', x:4.6,y:15.0,w:3.9,d:4.6,f:'stone',g:'soc',lx:7.0,ly:16.0},
-    {id:'gour',  n:'Varanda gourmet', x:0,y:19.6,w:10,d:2.4,f:'stone',ext:true,g:'ext',lx:7.6,ly:21.4,isNew:true},
-    {id:'lav',   n:'Lavanderia', x:8.5,y:15.6,w:1.5,d:4.0,f:'tile',ext:true,g:'ext',small:true,vert:true,lx:9.25,ly:17.6},
-    {id:'canil', n:'Canil', x:0,y:16.6,w:1.5,d:3.0,f:'concrete',ext:true,g:'ext',small:true,vert:true,lx:.75,ly:18.1},
-    {id:'fogo',  n:'Lareira de chão', x:6.6,y:22.2,w:3.4,d:2.8,f:'deck',ext:true,g:'ext',lx:8.3,ly:24.55,isNew:true,area:false},
+    {id:'gar',   n:'Garagem', x:1.5,y:0,w:5.0,d:5.0,f:'concrete',ext:true,g:'ext',lx:4.0,ly:4.5},
+    {id:'esc',   n:'Escritório', x:1.5,y:5.0,w:3.0,d:2.2,f:'wood',g:'int',lx:3.0,ly:6.3,isNew:true},
+    {id:'bsoc',  n:'Banho social', x:1.5,y:7.2,w:3.0,d:1.5,f:'tile',g:'int',small:true,lx:3.4,ly:8.1},
+    {id:'q2',    n:'Quarto 2', x:1.5,y:8.7,w:3.0,d:2.8,f:'wood',g:'int',lx:3.0,ly:10.3},
+    {id:'q3',    n:'Quarto 3', x:1.5,y:11.5,w:3.0,d:2.8,f:'wood',g:'int',lx:3.0,ly:13.1},
+    {id:'corr',  n:'Corredor', x:4.5,y:7.2,w:.95,d:7.1,f:'stone',g:'int',vert:true,lx:4.97,ly:10.6,isNew:true},
+    {id:'suite', n:'Suíte', x:1.5,y:14.3,w:3.95,d:2.6,f:'wood',g:'int',lx:3.5,ly:15.4},
+    {id:'bsuite',n:'Banho suíte', x:1.5,y:16.9,w:2.2,d:1.6,f:'tile',g:'int',small:true,lx:2.6,ly:17.55},
+    {id:'closet',n:'Closet', x:3.7,y:16.9,w:1.75,d:1.6,f:'wood',g:'int',small:true,lx:4.57,ly:17.55,isNew:true},
+    {id:'hall',  n:'Hall', x:4.5,y:5.0,w:4.0,d:2.2,f:'stone',g:'soc',lx:5.6,ly:6.2,cut:{w:1.2,d:1.5},isNew:true},
+    {id:'lavabo',n:'Lavabo', x:7.3,y:5.0,w:1.2,d:1.5,f:'tile',g:'soc',small:true,lx:7.9,ly:5.55,isNew:true},
+    {id:'sala',  n:'Sala de estar', x:5.45,y:7.2,w:3.05,d:3.8,f:'stone',g:'soc',lx:6.95,ly:9.4},
+    {id:'jantar',n:'Sala de jantar', x:5.45,y:11.0,w:3.05,d:3.1,f:'stone',g:'soc',lx:6.95,ly:12.9},
+    {id:'coz',   n:'Cozinha', x:5.45,y:14.1,w:3.05,d:4.4,f:'stone',g:'soc',lx:6.4,ly:16.4,cut:{w:1.2,d:1.6}},
+    {id:'lav',   n:'Lavanderia', x:7.3,y:14.1,w:1.2,d:1.6,f:'tile',g:'soc',small:true,lx:7.9,ly:14.95,isNew:true},
+    {id:'gour',  n:'Varanda gourmet', x:1.5,y:18.5,w:7.0,d:2.3,f:'stone',ext:true,g:'ext',lx:7.2,ly:20.45,isNew:true},
+    {id:'fogo',  n:'Lareira de chão', x:6.4,y:21.2,w:2.1,d:2.3,f:'deck',ext:true,g:'ext',lx:7.45,ly:23.45,isNew:true,area:false,nofill:true},
+    {id:'canil', n:'Canil', x:6.4,y:23.6,w:2.1,d:1.4,f:'concrete',ext:true,g:'ext',small:true,lx:7.45,ly:24.45},
   ],
   outdoor:[
-    {x:5.0,y:0,w:5.0,d:5.5,f:'grass'},
-    {x:0,y:5.5,w:1.5,d:11.1,f:'stone'},
-    {x:8.5,y:5.5,w:1.5,d:10.1,f:'stone'},
-    {x:0,y:22.0,w:10,d:3.0,f:'deck'},
+    {x:0,y:0,w:1.5,d:25,f:'grass'},
+    {x:8.5,y:0,w:1.5,d:25,f:'grass'},
+    {x:6.5,y:0,w:2.0,d:5.0,f:'grass'},
+    {x:1.5,y:20.8,w:7.0,d:4.2,f:'deck'},
   ],
-  pool:{x:.4,y:22.35,w:5.6,d:2.3},
-  fire:{cx:8.3,cy:23.6,r:.45,bench:1.25},
+  pool:{x:1.6,y:21.2,w:4.5,d:2.3},
+  fire:{cx:7.45,cy:22.3,r:.35,bench:.95},
   walls:[
-    {a:[1.5,5.5],b:[8.5,5.5],t:.2,o:[{c:3.05,w:1.4,k:'win'},{c:6.0,w:1.0,k:'door',s:1,main:true},{c:7.9,w:.5,k:'win'}]},
-    {a:[1.5,5.5],b:[1.5,19.6],t:.2,o:[{c:6.65,w:1.2,k:'win'},{c:9.4,w:1.5,k:'win'},{c:11.85,w:.6,k:'win'},{c:13.45,w:.6,k:'win'},{c:15.55,w:1.4,k:'win'},{c:18.25,w:1.4,k:'win'}]},
-    {a:[8.5,5.5],b:[8.5,19.6],t:.2,o:[{c:9.7,w:2.2,k:'win'},{c:13.4,w:1.6,k:'win'},{c:16.3,w:.8,k:'door',s:-1},{c:18.3,w:1.2,k:'win'}]},
-    {a:[1.5,19.6],b:[8.5,19.6],t:.2,o:[{c:3.05,w:1.2,k:'win'},{c:6.55,w:3.2,k:'slide'}]},
-    {a:[4.6,5.5],b:[4.6,19.6],t:.12,o:[{c:7.15,w:.8,k:'door',s:1},{c:8.35,w:.8,k:'door',s:1},{c:13.35,w:.7,k:'door',s:1},{c:14.65,w:.8,k:'door',s:1},{c:17.35,w:.8,k:'door',s:1}]},
-    {a:[1.5,7.8],b:[4.6,7.8],t:.12,o:[]},
-    {a:[1.5,11.0],b:[4.6,11.0],t:.12,o:[{c:4.0,w:.7,k:'door',s:-1}]},
-    {a:[1.5,12.7],b:[4.6,12.7],t:.12,o:[]},
-    {a:[1.5,14.2],b:[4.6,14.2],t:.12,o:[]},
-    {a:[1.5,16.9],b:[4.6,16.9],t:.12,o:[]},
-    {a:[7.3,5.5],b:[7.3,7.0],t:.12,o:[]},
-    {a:[7.3,7.0],b:[8.5,7.0],t:.12,o:[{c:7.8,w:.7,k:'door',s:1}]},
+    {a:[1.5,5.0],b:[8.5,5.0],t:.2,o:[{c:3.0,w:1.4,k:'win'},{c:6.8,w:1.0,k:'door',s:1,main:true},{c:7.9,w:.5,k:'win'}]},
+    {a:[1.5,5.0],b:[1.5,18.5],t:.2,o:[{c:6.1,w:1.2,k:'win'},{c:7.95,w:.6,k:'win'},{c:10.1,w:1.4,k:'win'},{c:12.9,w:1.4,k:'win'},{c:15.6,w:1.5,k:'win'},{c:17.7,w:.6,k:'win'}]},
+    {a:[8.5,5.0],b:[8.5,18.5],t:.2,o:[{c:9.1,w:2.2,k:'win'},{c:12.55,w:1.6,k:'win'},{c:14.9,w:.6,k:'win'},{c:16.9,w:1.2,k:'win'}]},
+    {a:[1.5,18.5],b:[8.5,18.5],t:.2,o:[{c:4.6,w:.6,k:'win'},{c:7.0,w:2.8,k:'slide'}]},
+    {a:[4.5,5.0],b:[4.5,14.3],t:.12,o:[{c:6.6,w:.8,k:'door',s:1},{c:8.0,w:.7,k:'door',s:1},{c:9.3,w:.8,k:'door',s:1},{c:12.1,w:.8,k:'door',s:1}]},
+    {a:[5.45,7.2],b:[5.45,18.5],t:.12,o:[]},
+    {a:[4.5,7.2],b:[5.45,7.2],t:.12,o:[{c:4.97,w:.8,k:'door',s:1}]},
+    {a:[1.5,7.2],b:[4.5,7.2],t:.12,o:[]},
+    {a:[1.5,8.7],b:[4.5,8.7],t:.12,o:[]},
+    {a:[1.5,11.5],b:[4.5,11.5],t:.12,o:[]},
+    {a:[1.5,14.3],b:[5.45,14.3],t:.12,o:[{c:4.97,w:.8,k:'door',s:1}]},
+    {a:[1.5,16.9],b:[5.45,16.9],t:.12,o:[{c:2.6,w:.7,k:'door',s:1},{c:4.6,w:.7,k:'door',s:1}]},
+    {a:[3.7,16.9],b:[3.7,18.5],t:.12,o:[]},
+    {a:[7.3,5.0],b:[7.3,6.5],t:.12,o:[]},
+    {a:[7.3,6.5],b:[8.5,6.5],t:.12,o:[{c:7.8,w:.7,k:'door',s:1}]},
+    {a:[7.3,14.1],b:[7.3,15.7],t:.12,o:[{c:14.9,w:.7,k:'door',s:-1}]},
+    {a:[7.3,15.7],b:[8.5,15.7],t:.12,o:[]},
   ],
-  fences:[{a:[0,0],b:[0,25]},{a:[10,0],b:[10,25]},{a:[0,25],b:[10,25]},{a:[5.6,0],b:[10,0]}],
-  gates:[{a:[0,0],b:[4.9,0]},{a:[5.0,0],b:[5.55,0]}],
-  pens:[{a:[0,16.6],b:[1.5,16.6],o:[{c:.75,w:.7}]}],
+  fences:[{a:[0,0],b:[0,25]},{a:[10,0],b:[10,25]},{a:[0,25],b:[10,25]},{a:[0,0],b:[1.4,0]},{a:[7.6,0],b:[10,0]}],
+  gates:[{a:[1.5,0],b:[6.5,0]},{a:[6.6,0],b:[7.5,0]}],
+  pens:[{a:[6.4,23.6],b:[8.5,23.6],o:[{c:7.0,w:.7}]},{a:[6.4,23.6],b:[6.4,25],o:[]}],
   covers:[
-    {x:0,y:.2,w:5.0,d:5.3},
-    {x:0,y:19.6,w:10,d:2.4},
-    {x:8.5,y:15.6,w:1.5,d:4.0},
-    {x:0,y:18.4,w:1.5,d:1.2},
+    {x:1.5,y:.2,w:5.0,d:4.8},
+    {x:1.5,y:18.5,w:7.0,d:2.3},
+    {x:7.4,y:24.0,w:1.1,d:1.0},
   ],
   furn:[
-    {k:'car',x:.3,y:.6,w:1.85,d:4.4},{k:'car',x:2.75,y:.6,w:1.85,d:4.4},
-    {x:1.65,y:5.65,w:1.6,d:.6},{x:2.2,y:6.35,w:.5,d:.5},{x:4.0,y:5.7,w:.45,d:1.6},
-    {k:'bed',x:2.0,y:8.3,w:1.6,d:2.0,head:'min'},{x:1.65,y:10.3,w:2.0,d:.6},
-    {k:'shower',x:1.65,y:11.1,w:1.0,d:1.5},{k:'wc',x:3.0,y:12.0,w:.4,d:.6,back:'y1'},{x:3.6,y:11.15,w:.85,d:.45},
-    {k:'shower',x:1.65,y:12.8,w:.9,d:1.3},{k:'wc',x:2.8,y:13.5,w:.4,d:.6,back:'y1'},{x:3.6,y:12.85,w:.85,d:.45},
-    {k:'bed',x:2.3,y:14.4,w:1.4,d:1.9,head:'min'},{x:1.65,y:16.25,w:1.8,d:.55},
-    {k:'bed',x:2.3,y:17.1,w:1.4,d:1.9,head:'min'},{x:1.65,y:18.95,w:1.8,d:.55},
-    {k:'wc',x:7.5,y:5.6,w:.4,d:.6,back:'y0'},{x:7.95,y:6.4,w:.45,d:.5},
-    {x:6.2,y:5.7,w:1.0,d:.35},
-    {k:'sofa',x:7.55,y:8.2,w:.85,d:2.4,back:'x1'},{x:5.9,y:8.8,w:.9,d:1.2},{x:4.75,y:8.6,w:.4,d:1.8},{k:'rug',x:5.6,y:8.1,w:1.7,d:2.8},
-    {k:'table',x:6.2,y:12.3,w:1.0,d:2.0},
-    {x:7.85,y:16.8,w:.6,d:2.65},{x:4.75,y:15.15,w:1.4,d:.5},{x:5.8,y:16.4,w:1.0,d:2.0},{x:4.75,y:18.95,w:.6,d:.55},
-    {k:'table',x:2.4,y:20.3,w:3.2,d:1.0},{x:.1,y:19.75,w:.7,d:2.1},
-    {x:8.65,y:16.2,w:.6,d:1.5},{x:8.65,y:18.0,w:.6,d:.6},
-    {k:'dog',x:.3,y:17.6,w:.9,d:.8},
-    {k:'tree',x:7.4,y:1.6,w:1.8,d:1.8},
+    {k:'car',x:1.8,y:.4,w:1.85,d:4.4},{k:'car',x:4.3,y:.4,w:1.85,d:4.4},
+    {x:1.65,y:5.15,w:1.5,d:.6},{x:2.15,y:5.85,w:.5,d:.5},{x:3.95,y:5.2,w:.45,d:1.5},
+    {k:'shower',x:1.65,y:7.3,w:.9,d:1.3},{k:'wc',x:2.75,y:8.0,w:.4,d:.6,back:'y1'},{x:3.55,y:7.35,w:.85,d:.45},
+    {k:'bed',x:1.7,y:9.3,w:1.9,d:1.4,head:'x'},{x:1.65,y:10.85,w:1.6,d:.55},
+    {k:'bed',x:1.7,y:12.1,w:1.9,d:1.4,head:'x'},{x:1.65,y:13.65,w:1.6,d:.55},
+    {k:'bed',x:1.7,y:14.65,w:2.0,d:1.6,head:'x'},
+    {k:'shower',x:1.65,y:17.0,w:.9,d:1.0},{k:'wc',x:2.7,y:17.75,w:.4,d:.6,back:'y1'},{x:2.75,y:17.0,w:.8,d:.45},
+    {x:3.85,y:17.85,w:1.5,d:.55},
+    {k:'wc',x:7.5,y:5.1,w:.4,d:.6,back:'y0'},{x:7.95,y:5.85,w:.45,d:.5},
+    {x:5.6,y:5.15,w:.9,d:.35},
+    {k:'sofa',x:7.55,y:7.6,w:.85,d:2.3,back:'x1'},{x:6.3,y:8.2,w:.8,d:1.1},{x:5.55,y:7.8,w:.4,d:1.8},{k:'rug',x:6.1,y:7.6,w:1.3,d:2.4},
+    {k:'table',x:6.45,y:11.6,w:1.0,d:1.9},
+    {x:5.55,y:15.9,w:.6,d:2.5},{x:6.6,y:16.0,w:.9,d:1.7},
+    {x:7.4,y:14.2,w:1.0,d:.6},
+    {k:'table',x:3.4,y:19.2,w:3.2,d:.95},{x:1.6,y:18.65,w:.7,d:2.0},
+    {k:'dog',x:7.7,y:24.1,w:.7,d:.7},
+    {k:'tree',x:7.0,y:1.5,w:1.8,d:1.8},
   ],
-  steps:[[5.25,.5],[5.35,1.2],[5.45,1.9],[5.55,2.6],[5.65,3.3],[5.75,4.0],[5.85,4.7]],
-  flow:[[6.0,4.6],[6.0,6.6],[6.6,9.7],[6.6,13.3],[6.6,17.5],[6.55,20.6]],
+  steps:[[6.7,.5],[6.75,1.2],[6.8,1.9],[6.85,2.6],[6.9,3.3],[6.95,4.0]],
+  flow:[[7.1,4.2],[6.8,6.3],[6.95,8.4],[6.3,12.0],[6.3,17.6],[6.8,19.8]],
   dims:{
     h:[[0,10,16,'10,00'],[0,1.5,32,'1,50'],[1.5,8.5,32,'7,00'],[8.5,10,32,'1,50']],
-    v:[[0,25,18,'25,00'],[0,5.5,40,'5,50'],[5.5,19.6,40,'14,10'],[19.6,25,40,'5,40']],
+    v:[[0,25,18,'25,00'],[0,5.0,40,'5,00'],[5.0,18.5,40,'13,50'],[18.5,25,40,'6,50']],
   },
 };
 
@@ -192,13 +200,13 @@ const fmt = n => n.toLocaleString('pt-BR',{minimumFractionDigits:1,maximumFracti
 const A = r => r.w*r.d - (r.cut ? r.cut.w*r.cut.d : 0);
 const lotA = HOUSE.lot.w*HOUSE.lot.d;
 const inner = HOUSE.rooms.filter(r=>!r.ext);
-const houseA = 7.0*14.1;
-const gourA = 10*2.4, garA = 5.0*5.3;
+const houseA = 7.0*13.5;
+const gourA = 7.0*2.3, garA = 5.0*4.8;
 const P = HOUSE.pool;
 const permA = HOUSE.outdoor.filter(o=>o.f==='grass').reduce((s,o)=>s+o.w*o.d,0);
 
 document.getElementById('meta').innerHTML =
-  `<span>Terreno <b>10 × 25 m</b> (${lotA} m²)</span><span>Casa <b>7,00 × 14,10 m ≈ ${fmt(houseA)} m²</b></span><span>Recuos laterais <b>1,50 m</b></span><span><b>3 quartos</b> (1 suíte) · escritório · lavabo</span><span>Gourmet integrada · <b>piscina 5,60 × 2,30 m</b> · <b>lareira de chão</b></span>`;
+  `<span>Terreno <b>10 × 25 m</b> (${lotA} m²)</span><span>Casa <b>7,00 × 13,50 m ≈ ${fmt(houseA)} m²</b></span><span>Recuos laterais <b>1,50 m livres</b></span><span><b>3 quartos</b> (suíte com closet) em corredor fechado · escritório · lavabo</span><span>Gourmet integrada · <b>piscina 4,50 × 2,30 m</b> · <b>lareira de chão</b> · canil</span>`;
 
 const row = r => `<tr class="room${r.isNew?' new':''}" data-room="${r.id}"><td>${r.n}</td><td class="n">${r.area===false?'—':fmt(A(r))+' m²'}</td></tr>`;
 document.getElementById('areas').innerHTML =
@@ -206,7 +214,7 @@ document.getElementById('areas').innerHTML =
   '<tr class="sub"><td colspan="2">Social (lado direito)</td></tr>' + HOUSE.rooms.filter(r=>r.g==='soc').map(row).join('') +
   '<tr class="sub"><td colspan="2">Externo</td></tr>' + HOUSE.rooms.filter(r=>r.g==='ext').map(row).join('') +
   `<tr class="room" data-room="pool"><td>Piscina</td><td class="n">${fmt(P.w*P.d)} m²</td></tr></tbody>` +
-  `<tfoot><tr><td>Casa (área construída)</td><td class="n">${fmt(houseA)} m²</td></tr><tr><td>Taxa de ocupação (casa + coberturas)</td><td class="n">${fmt((houseA+gourA+garA+6)/lotA*100)} %</td></tr></tfoot>`;
+  `<tfoot><tr><td>Casa (área construída)</td><td class="n">${fmt(houseA)} m²</td></tr><tr><td>Taxa de ocupação (casa + coberturas)</td><td class="n">${fmt((houseA+gourA+garA+1.1)/lotA*100)} %</td></tr><tr><td>Recuos laterais livres</td><td class="n">2 × 1,50 m</td></tr></tfoot>`;
 
 (function drawPlan(){
   const L=HOUSE.lot, S=26, ML=60, MT=44, MR=22, MB=60;
@@ -216,7 +224,7 @@ document.getElementById('areas').innerHTML =
   const line=(x1,y1,x2,y2,cls)=>`<line x1="${X(x1)}" y1="${Y(y1)}" x2="${X(x2)}" y2="${Y(y2)}" class="${cls}"/>`;
   let o='<defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" class="arrowhead"/></marker></defs>';
   HOUSE.outdoor.forEach(z=>o+=R(z,'f-'+z.f));
-  HOUSE.rooms.forEach(r=>o+=R(r,'f-'+r.f));
+  HOUSE.rooms.forEach(r=>{ if(!r.nofill) o+=R(r,'f-'+r.f); });
   HOUSE.rooms.forEach(r=>o+=R(r,'rm',`data-room="${r.id}" fill="transparent"`));
   o+=R(P,'f-water rm',`data-room="pool"`);
   o+=R({x:P.x+.25,y:P.y+.25,w:P.w-.5,d:P.d-.5},'thin','stroke-dasharray="3 3"');
@@ -225,7 +233,7 @@ document.getElementById('areas').innerHTML =
   o+=`<circle cx="${X(F.cx)}" cy="${Y(F.cy)}" r="${F.r*S}" class="f-fire"/>`;
   o+=R({x:L.w*0,y:0,w:L.w,d:L.d},'lot');
   HOUSE.steps.forEach(([x,y])=>o+=R({x,y,w:.7,d:.4},'fur','rx="1.5"'));
-  o+=R({x:4.6,y:7.6,w:.9,d:12.0},'circ');
+  o+=R({x:4.5,y:7.2,w:.95,d:7.1},'circ');
 
   HOUSE.furn.forEach(f=>{
     if(f.k==='tree'){o+=`<circle cx="${X(f.x+f.w/2)}" cy="${Y(f.y+f.d/2)}" r="${f.w/2*S}" class="fur" stroke-dasharray="3 2"/>`;return;}
@@ -233,7 +241,7 @@ document.getElementById('areas').innerHTML =
     if(f.k==='dog'){o+=R(f,'fur');o+=line(f.x,f.y,f.x+f.w/2,f.y+f.d/2,'fur');o+=line(f.x+f.w/2,f.y+f.d/2,f.x+f.w,f.y,'fur');return;}
     if(f.k==='rug'){o+=R(f,'fur','stroke-dasharray="2 2"');return;}
     o+=R(f,'fur', f.k==='car'?'rx="7"':'rx="1.5"');
-    if(f.k==='bed'){const hy=f.head==='max'?f.y+f.d-.35:f.y+.35; o+=line(f.x,hy,f.x+f.w,hy,'fur');}
+    if(f.k==='bed'){ if(f.head==='x'){o+=line(f.x+.35,f.y,f.x+.35,f.y+f.d,'fur');} else {const hy=f.head==='max'?f.y+f.d-.35:f.y+.35; o+=line(f.x,hy,f.x+f.w,hy,'fur');} }
     if(f.k==='car'){o+=R({x:f.x+.2,y:f.y+1.3,w:f.w-.4,d:1.9},'fur','rx="4"');}
     if(f.k==='shower'){o+=line(f.x,f.y,f.x+f.w,f.y+f.d,'fur');o+=line(f.x+f.w,f.y,f.x,f.y+f.d,'fur');}
     if(f.k==='table'){const n=Math.round((f.w>f.d?f.w:f.d)/.6); for(let i=0;i<n;i++){ if(f.w>f.d){const cx=f.x+.3+i*(f.w-.6)/Math.max(1,n-1); o+=R({x:cx-.2,y:f.y-.5,w:.4,d:.4},'fur','rx="2"'); o+=R({x:cx-.2,y:f.y+f.d+.1,w:.4,d:.4},'fur','rx="2"');} else {const cy=f.y+.3+i*(f.d-.6)/Math.max(1,n-1); o+=R({x:f.x-.5,y:cy-.2,w:.4,d:.4},'fur','rx="2"'); o+=R({x:f.x+f.w+.1,y:cy-.2,w:.4,d:.4},'fur','rx="2"');}}}
@@ -282,13 +290,12 @@ document.getElementById('areas').innerHTML =
     if(r.area!==false) o+=`<text x="${cx}" y="${cy+9.5}" class="area">${fmt(A(r))} m²</text>`;
   });
   o+=`<text x="${X(P.x+P.w/2)}" y="${Y(P.y+P.d/2)+3}" class="lbl" style="font-size:11px">Piscina</text>`;
-  o+=`<text x="${X(P.x+P.w/2)}" y="${Y(P.y+P.d/2)+14}" class="area">5,60 × 2,30 m · prof. 1,40</text>`;
-  o+=`<text x="${X(8.3)}" y="${Y(22.45)}" class="area">banco circular</text>`;
-  o+=`<text x="${X(4.0)}" y="${Y(21.2)}" class="area">mesa 10 lugares</text>`;
-  o+=`<text x="${X(.75)}" y="${Y(11)}" class="area" transform="rotate(-90 ${X(.75)} ${Y(11)})">recuo lateral 1,50</text>`;
-  o+=`<text x="${X(9.25)}" y="${Y(10.5)}" class="area" transform="rotate(-90 ${X(9.25)} ${Y(10.5)})">recuo lateral 1,50</text>`;
-  o+=`<text x="${X(5.05)}" y="${Y(10.5)}" class="area" transform="rotate(-90 ${X(5.05)} ${Y(10.5)})">circulação</text>`;
-  o+=`<text x="${X(8.6)}" y="${Y(3.6)}" class="area">jardim</text>`;
+  o+=`<text x="${X(P.x+P.w/2)}" y="${Y(P.y+P.d/2)+14}" class="area">4,50 × 2,30 m · prof. 1,40</text>`;
+  o+=`<text x="${X(7.45)}" y="${Y(21.1)}" class="area">banco circular</text>`;
+  o+=`<text x="${X(5.0)}" y="${Y(18.85)}" class="area">mesa 10 lugares</text>`;
+  o+=`<text x="${X(.75)}" y="${Y(12)}" class="area" transform="rotate(-90 ${X(.75)} ${Y(12)})">recuo lateral 1,50 · livre</text>`;
+  o+=`<text x="${X(9.25)}" y="${Y(12)}" class="area" transform="rotate(-90 ${X(9.25)} ${Y(12)})">recuo lateral 1,50 · livre</text>`;
+  o+=`<text x="${X(8.2)}" y="${Y(3.4)}" class="area">jardim</text>`;
 
   const dimH=(x1,x2,yy,txt)=>{o+=`<line x1="${X(x1)}" y1="${yy}" x2="${X(x2)}" y2="${yy}" class="dim"/>`;
     [x1,x2].forEach(x=>o+=`<line x1="${X(x)}" y1="${yy-4}" x2="${X(x)}" y2="${yy+4}" class="dim"/>`);
